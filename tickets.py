@@ -18,11 +18,17 @@ Example:
     tickets -dg 成都 南京 2016-10-10
 """
 from docopt import docopt
-
+from stations import stations
 def cli():
     """command-line interface"""
     arguments = docopt(__doc__)
-    print(arguments)
+    from_station = stations.get(arguments['<from>'])
+    to_station = stations.get(arguments['<to>'])
+    date = arguments['<date>']
+    # 构建URL
+    url = 'https://kyfw.12306.cn/otn/lcxxcx/query?purpose_codes=ADULT&queryDate={}&from_station={}&to_station={}'.format(
+        date, from_station, to_station
+    )
 
 if __name__ == '__main__':
     cli()
