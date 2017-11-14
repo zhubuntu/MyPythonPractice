@@ -1,21 +1,21 @@
 # coding: utf-8
 
-"""ÃüÁîĞĞ»ğ³µÆ±²é¿´Æ÷
+"""å‘½ä»¤è¡Œç«è½¦ç¥¨æŸ¥çœ‹å™¨
 
 Usage:
     tickets [-gdtkz] <from> <to> <date>
 
 Options:
-    -h,--help   ÏÔÊ¾°ïÖú²Ëµ¥
-    -g          ¸ßÌú
-    -d          ¶¯³µ
-    -t          ÌØ¿ì
-    -k          ¿ìËÙ
-    -z          Ö±´ï
+    -h,--help   æ˜¾ç¤ºå¸®åŠ©èœå•
+    -g          é«˜é“
+    -d          åŠ¨è½¦
+    -t          ç‰¹å¿«
+    -k          å¿«é€Ÿ
+    -z          ç›´è¾¾
 
 Example:
-    tickets ±±¾© ÉÏº£ 2016-10-10
-    tickets -dg ³É¶¼ ÄÏ¾© 2016-10-10
+    tickets åŒ—äº¬ ä¸Šæµ· 2016-10-10
+    tickets -dg æˆéƒ½ å—äº¬ 2016-10-10
 """
 from docopt import docopt
 
