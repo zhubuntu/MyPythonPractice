@@ -1,5 +1,5 @@
 # coding: utf-8
-import console
+import curses
 from random import randrange, choice
 from collections import defaultdict
 actions = ['Up', 'Left', 'Down', 'Right', 'Restart', 'Exit']
@@ -193,7 +193,7 @@ def main(stdscr):
             'Game': game
         }
 
-    #console.use_default_colors()
+    curses.use_default_colors()
     game_field = GameField(win=2048)
 
 
@@ -202,4 +202,4 @@ def main(stdscr):
     #状态机开始循环
     while state != 'Exit':
         state = state_actions[state]()
-c = console.Console
+curses.wrapper(main)
