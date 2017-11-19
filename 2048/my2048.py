@@ -181,7 +181,7 @@ class Game(object):
             for j in range(4):
                 cast('|')
                 if self.filed[i][j]!=0:
-                    cast('{:^5}'.format(self.filed[i][j]))
+                    cast('{:^5}'.format(self.filed[i][j]))#控制格式化字符长度
                 else:
                     cast(' '*5)
             cast('|'+'\n')

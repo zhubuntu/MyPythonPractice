@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+  <title>Hello</title>
+  <style>
+    h1 {
+      color: #333333;
+      font-size: 48px;
+      text-shadow: 3px 3px 3px #666666;
+    }
+  </style>
+</head>
+<body>
+  <h1 onclick="change()">Hello, world!</h1>
+  <div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="username" placeholder="用户名" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="密码" required=""/>      
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button onClick="return validateLogin()">Login</button>
+    </form>
+  </div>
+</body>
+</html>
